@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="RESERVIAstyles.css" />
+    <title>RESERVIA</title>
+</head>
+
+<body id="body_section">
+
+<!-- en tête -->
+    <header>
+
+        <!-- logo + menu navigation -->
+
+        <nav>
+            <img src="Projet2-Reservia/images/logo/Reservia@3x.png" alt="logo_RESERVIA" />
+            <ul>
+                <li class="li_tete_hebergements">
+                    <a href="#hebergement">Hébergements</a>
+                </li>
+                <li class="li_tete_activites">
+                    <a href="#activites">Activités</a>
+                </li>
+                <li class="li_tete_inscrire">
+                    <a href="inscrire" class="inscrire">S'inscrire</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+<!-- RECHERCHE -->
+    <section id="recherche">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h3>En plein centre ville ou en pleine nature</h3>
+
+        <!-- bouton recherche villes -->
+
+        <div class="recherche_villes">
+            <div class="repere">
+                <img src="Icon/map-marker-alt-solid.svg" alt="repere" />
+            </div>
+            <div class="barre_villes">
+                <form method="POST" action="search" >
+                    <input class="villes" type="text" name="ville" placeholder="Marseille , France" />
+                </form>
+            </div>
+            <div class="recherche">
+                <div class="loupe">
+                    <img src="Icon/search-solid-white.svg" alt="loupe" />
+                </div>
+                <input class="bouton_rechercher" type="button" value="Rechercher" />
+            </div>
+        </div>
+
+        <!-- filtres de recherche -->
+
+        <div class="filtres">
+            <h2>Filtres</h2>
+               <div class="filtre_eco">
+                    <div class="icon_eco">
+                        <img src="Icon/money-bill-wave-alt-solid-blue.svg" alt="logo_eco" />
+                    </div>
+                    <div class="titre_eco">
+                        <h2>Economique</h2>
+                    </div>
+               </div>
+               <div class="filtre_fam">
+                    <div class="icon_fam">
+                        <img src="Icon/child-solid-blue.svg" alt="logo_fam" />
+                    </div>
+                    <div class="titre_fam">
+                        <h2>Familial</h2>
+                    </div>
+                </div>
+                <div class="filtre_rom">
+                    <div class="icon_rom">
+                        <img src="Icon/heart-solid-blue.svg" alt="logo_rom" />
+                    </div>
+                    <div class="titre_rom">
+                        <h2>Romantique</h2>
+                    </div>
+                </div>
+                <div class="filtre_dog">
+                    <div class="icon_dog">
+                        <img src="Icon/dog-solid-blue.svg" alt="logo_dog" />
+                    </div>
+                    <div class="titre_dog">
+                        <h2>Animaux autorisés</h2>
+                    </div>
+                </div> 
+        </div>
+        <div class="info">
+            <div class="icon_info">
+                <img src="Icon/info-solid-blue.svg" alt="logo_info" />
+            </div>
+            <h3>Plus de 500 logements sont disponibles dans cette ville</h3> 
+        </div>
+
+    </section>
+
+<!-- HEBERGEMENT -->
+    <section id="hebergement">
+
+        <!-- partie : hébergements à Marseille -->
+
+        <div class="marseille">
+            <h1>Hébergements à Marseille</h1>
+            <div class="photo_hebergement">
+                <div class="ligne_1">
+                    <a href="Projet2-Reservia/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <div class="chambre_1">
+                            <div class="photo_chambre_1">
+                                <img src="Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre_1" />
+                            </div>
+                            <div class="menu_chambre_1">
+                                    <h3><strong>Auberge La Cannebière</strong></h3>
+                                    <h3>Nuit à partir de 25 €</h3>
+                                <div class="notation_etoile">
+                                    <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                    <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                    <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                    <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                    <img src="Icon/star-solid-grey.svg" alt="etoile_vide" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Projet2-Reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                        <div class="chambre_3">
+                            <div class="photo_chambre_3">
+                                <img src="Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre_3" />
+                            </div>
+                        </div>
+                        <div class="menu_chambre_3">
+                                <h3><strong>Hôtel du Port</strong></h3>
+                                <h3>Nuit à partir de 52 €</h3>
+                            <div class="notation_etoile">
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Projet2-Reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                        <div class="chambre_5">
+                            <div class="photo_chambre_5">
+                                <img src="Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre_5" />
+                            </div>
+                        </div>
+                        <div class="menu_chambre_5">
+                                <h3><strong>Hôtel Les mouettes</strong></h3>
+                                <h3>Nuit à partir de 76 €</h3>
+                            <div class="notation_etoile">
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-grey.svg" alt="etoile_vide" />
+                            </div>
+                        </div>
+                    </a>    
+                </div>
+                <div class="ligne_2">
+                    <a href="Projet2-Reservia/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                        <div class="chambre_2">
+                            <div class="photo_chambre_2">
+                                <img src="Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre_2" />
+                            </div>
+                            <div class="menu_chambre_2">
+                                    <h3><strong>Hôtel de la mer</strong></h3>
+                                    <h3>Nuit à partir de 46 €</h3>
+                                <div class="notation_etoile">
+                                    <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                    <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                    <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                    <img src="Icon/star-solid-grey.svg" alt="etoile_vide" />
+                                    <img src="Icon/star-solid-grey.svg" alt="etoile_vide" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>  
+                    <a href="Projet2-Reservia/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                        <div class="chambre_4">
+                            <div class="photo_chambre_4">
+                                <img src="Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="chambre_4" />
+                            </div>
+                        </div>
+                        <div class="menu_chambre_4">
+                                <h3><strong>Auberge Le Panier</strong></h3>
+                                <h3>Nuit à partir de 23 €</h3>
+                            <div class="notation_etoile">
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-grey.svg" alt="etoile_vide" />
+                            </div>
+                        </div>
+                    </a>
+                     <a href="Projet2-Reservia/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                        <div class="chambre_6">
+                            <div class="photo_chambre_6">
+                                <img src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre_6" />
+                            </div>
+                        </div>
+                        <div class="menu_chambre_6">
+                                <h3><strong>Hôtel chez Amina</strong></h3>
+                                <h3>Nuit à partir de 96 €</h3>
+                            <div class="notation_etoile">
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="plus">
+            <h2>Afficher plus</h2>
+            </div>
+        </div>
+
+        <!-- partie : les plus populaires -->
+
+        <div class="populaires">
+            <div class="titre_populaires">
+                <h1>Les plus populaires</h1>
+                <img src="Icon/chart-line-solid.svg" alt="graph_up" class="graph_up" />
+            </div>
+            <div class="colonne_populaires">
+                <a href="Projet2-Reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                    <div class="populaire_1">
+                            <img src="Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="populaire_1" />
+                        <div class="menu_populaire">
+                            <div class="titre_menu_populaire">
+                                <h3><strong>Hôtel Le Soleil du matin</strong></h3>
+                                <h3>Nuit à partir de 128 €</h3>
+                            </div>
+                            <div class="notation_etoile">
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                            </div>
+                        </div>   
+                    </div>
+                </a>
+                <a href="Projet2-Reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                    <div class="populaire_2">
+                            <img src="Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="populaire_2" />
+                        <div class="menu_populaire">
+                            <div class="titre_menu_populaire">
+                                <h3><strong>Au coeur de l'eau<br>Chambres d'hôtes</strong></h3>
+                                <h3>Nuit à partir de 71 €</h3>
+                            </div>
+                            <div class="notation_etoile">
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-grey.svg" alt="etoile_vide" />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="Projet2-Reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                    <div class="populaire_3">
+                            <img src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="populaire_3" />
+                        <div class="menu_populaire">
+                            <div class="titre_menu_populaire">
+                                <h3><strong>Hôtel tout Bleu et Blanc</strong></h3>
+                                <h3>Nuit à partir de 68 €</h3>
+                            </div>
+                            <div class="notation_etoile">
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-blue.svg" alt="etoile_pleine" />
+                                <img src="Icon/star-solid-grey.svg" alt="etoile_vide" />
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+<!-- ACTIVITE -->
+
+    <section id="activites">
+        <h1>Activités à Marseille</h1>
+        <div class="photo_activites">
+            <div class="colonne_4">
+                <a href="Projet2-Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">               
+                    <figure>
+                        <img src="Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activite_1" />
+                        <figcaption><p>Vieux Port</p></figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="colonne_5">
+                <a href="Projet2-Reservia/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">             
+                    <figure>
+                        <div class="fort_de_pomegues">
+                            <img src="Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activite_2" />
+                        </div>
+                            <figcaption><p>Fort de Pomègues</p></figcaption>
+                    </figure>
+                </a>
+                <a href="Projet2-Reservia/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">             
+                    <figure>
+                        <div class="iles_du_frioul">
+                            <img src="Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activite_3" />
+                        </div>
+                            <figcaption><p>Iles du Frioul</p></figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="colonne_6">
+                <a href="Projet2-Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                    <figure>
+                        <img src="Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activite_4" />
+                        <figcaption><p>Parc National des Calanques</p></figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="colonne_7">
+                <a href="Projet2-Reservia/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                    <figure>
+                        <img src="Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activite_5" />
+                        <figcaption><p>Notre-Dame-de-La-Garde</p></figcaption>
+                    </figure>
+                </a>
+                <a href="Projet2-Reservia/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                    <figure>
+                        <img src="Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activite_6" />
+                        <figcaption><p>Parc Longchamp</p></figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- pied de page -->
+    <footer>
+        <div class="lien_pied_page">
+            <div class="menu_pied">
+                <h2>A propos</h2>
+                <ul class="ul_pied">
+                    <li class="li_pied">Fonctionnement du site</li>
+                    <li class="li_pied">Conditions générales de vente</li>
+                    <li class="li_pied">Données et confidentialité</li>
+                </ul>
+            </div>
+            <div class="menu_pied">
+                <h2>Nos hébergements</h2>
+                <ul class="ul_pied">
+                    <li class="li_pied">Charte qualité</li>
+                    <li class="li_pied">Soumettre votre hôtel</li>
+                </ul>
+            </div>
+            <div class="menu_pied">
+                <h2>Assistance</h2>
+                <ul class="ul_pied">
+                    <li class="li_pied">Centre d'aide</li>
+                    <li class="li_pied">Nous contacter</li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+</body>
